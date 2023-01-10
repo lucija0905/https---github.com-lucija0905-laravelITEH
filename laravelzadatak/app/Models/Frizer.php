@@ -10,6 +10,15 @@ use App\Models\Musterija;
 class Frizer extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'ime',
+        'prezime',
+        'godRođenja',
+        'broj_telefona',
+        'salon_id'
+    ];
+
 
     public function salon()
     {

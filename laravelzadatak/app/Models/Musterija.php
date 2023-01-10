@@ -10,6 +10,14 @@ class Musterija extends Model
 {
     use HasFactory;
 
+   protected $fillable = [
+        'ime',
+        'prezime',
+        'broj_telefona',
+        'email',
+        'frizer_id'
+    ];
+
     public function frizer()
     {
         return $this->belongsTo(Frizer::class);

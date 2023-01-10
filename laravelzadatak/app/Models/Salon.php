@@ -10,6 +10,14 @@ use App\Models\Frizer;
 class Salon extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'naziv',
+        'vlasnik',
+        'adresa',
+        'grad',
+        'website'
+    ];
 
     public function frizeri()
     {
